@@ -1,0 +1,31 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: test-http-request
+  title: Test HTTP Request
+  description: Test the plugin HTTP Request
+spec:
+  owner: jesuino
+  type: service
+  steps:
+    - id: backstage_request
+      name: backstage request
+      action: http:backstage:request
+      input:
+        method: 'GET'
+        path: '/proxy/quay/api/'
+  output:
+    text:
+     - title: body
+       content: |
+         **Code**<br>  
+         ${{ steps.backstage_request.output.code }}
+         <br>
+         **Headers**
+         <br> 
+         ${{ steps.backstage_request.output.headers }} 
+         <br>
+         **Body** <br>
+         ${{ steps.backstage_request.output.body }}
+
+
