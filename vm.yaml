@@ -5,3 +5,6 @@ metadata:
   name: developer-hub
   title: Vm Node Test
   description: Vm Node Test
+spec:
+  owner: Gustavo Lira
+  type: service  
