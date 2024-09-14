@@ -1,10 +1,21 @@
 
-apiVersion: scaffolder.backstage.io/v1beta3
-kind: Template
+# apiVersion: scaffolder.backstage.io/v1beta3
+# kind: Template
+# metadata:
+#   name: developer-hub
+#   title: Vm Node Test
+#   description: Vm Node Test
+# spec:
+#   owner: Gustavo Lira
+#   type: service  
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
 metadata:
   name: developer-hub
-  title: Vm Node Test
-  description: Vm Node Test
+  annotations:
+    backstage.io/kubernetes-id: developer-hub
 spec:
-  owner: Gustavo Lira
-  type: service  
+  type: website
+  lifecycle: development
+  owner: janus-authors
