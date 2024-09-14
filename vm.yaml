@@ -1,0 +1,7 @@
+
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: developer-hub
+  title: Vm Node Test
+  description: Vm Node Test
