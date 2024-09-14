@@ -1,0 +1,14 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+labels:
+  backstage.io/kubernetes-id: developer-hub
+metadata:
+  name: vm-test
+  title: VM Topology
+  description: VM Topology
+  tags:
+    - vm node
+spec:
+  type: service
+  lifecycle: experimental
+  owner: dev-support
