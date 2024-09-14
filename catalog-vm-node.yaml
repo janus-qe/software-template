@@ -1,12 +1,29 @@
-apiVersion: kubevirt.io/v1
-kind: Component
+# apiVersion: kubevirt.io/v1
+# kind: Component
+# metadata:
+#   name: "developer-hub"
+#   title: "VM Topology"
+#   description: "VM Topology"
+#   tags:
+#     - vm
+# spec:
+#   type: service
+#   lifecycle: experimental
+#   owner: dev-support
+
+
+apiversion: kubevirt.io/v1
+kind: virtualmachine
 metadata:
-  name: "developer-hub"
-  title: "VM Topology"
-  description: "VM Topology"
-  tags:
-    - vm
-spec:
-  type: service
-  lifecycle: experimental
-  owner: dev-support
+  labels:
+    backstage.io/kubernetes-id: developer-hub
+    name: developer-hub
+
+
+# kind: VirtualMachineInstancePreset
+# metadata:
+#   name: example-preset
+# spec:
+#   selector:
+#     matchLabels:
+#       kubevirt.io/flavor: foo
