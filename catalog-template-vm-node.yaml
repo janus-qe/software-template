@@ -3,7 +3,7 @@ kind: VirtualMachine
 labels:
   backstage.io/kubernetes-id: developer-hub
 metadata:
-  name: vm-test
+  name: developer-hub
   title: VM Topology
   description: VM Topology
   tags:
