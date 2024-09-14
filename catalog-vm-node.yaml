@@ -1,5 +1,5 @@
 apiVersion: kubevirt.io/v1
-kind: virtualmachine
+kind: VirtualMachine
 metadata:
   labels:
     backstage.io/kubernetes-id: developer-hub
