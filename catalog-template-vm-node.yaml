@@ -1,7 +1,5 @@
 apiVersion: kubevirt.io/v1
 kind: Component
-labels:
-  backstage.io/kubernetes-id: developer-hub
 metadata:
   name: developer-hub
   title: VM Topology
