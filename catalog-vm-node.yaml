@@ -1,11 +1,11 @@
 apiVersion: kubevirt.io/v1
 kind: Component
 metadata:
-  name: developer-hub
-  title: VM Topology
-  description: VM Topology
+  name: "developer-hub"
+  title: "VM Topology"
+  description: "VM Topology"
   tags:
-    - vm node
+    - vm
 spec:
   type: service
   lifecycle: experimental
