@@ -3,4 +3,4 @@ kind: virtualmachine
 metadata:
   labels:
     backstage.io/kubernetes-id: developer-hub
-    name: developer-hub
+  name: developer-hub
